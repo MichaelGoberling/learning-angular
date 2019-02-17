@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-primary">Directive Practice</h1>
+        <hr>
+        <button 
+        class="btn btn-primary" 
+        (click)="onDisplayDetails()">
+            Display Details
+        </button>
+        <p *ngIf="displayDetails">Secret Password = 'tuna'</p>
+        <p *ngFor="let click of buttonClicks" [ngClass]="{'after-five': click > 5}">Button click #: {{ click }}</p>
+      </div>
+    </div>
+</div>
+  
+  
+  
+  
