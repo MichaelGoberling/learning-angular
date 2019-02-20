@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: [`.after-five {
-    background-color: blue;
+  styles: [`.white-text {
+    color: white;
   }
   `]
 })
@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   onDisplayDetails() {
-    this.displayDetails = true;
+    this.displayDetails = !this.displayDetails;
     this.clickNumber += 1;
     this.buttonClicks.push(this.clickNumber);
   }
